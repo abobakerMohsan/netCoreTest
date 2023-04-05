@@ -1,11 +1,5 @@
 ﻿using Products.Persistence;
 using Products.Application;
-using Products.Api.GraphQL.Schemas;
-using GraphQL;
-using GraphQL.Server;
-using GraphQL.Server.Ui.Playground;
-using MediatR;
-using System.Reflection;
 using System;
 using Projects.Api.Filters;
 using FluentValidation.AspNetCore;
@@ -16,34 +10,84 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Products.Application.Features.Users.Commands.CreateUser;
 
+using Products.Api.GraphQL.Schemas;
+using MediatR;
+using System.Reflection;
+using GraphQL;
+using GraphQL.Server;
+//using GraphQL.MicrosoftDI;
+using GraphQL.SystemTextJson;
+using GraphQL.Types;
+using GraphQL.Server.Ui.Playground;
+
+
+
 
 
 var builder = WebApplication.CreateBuilder(args);
 
+ConfigurationManager configuration = builder.Configuration;
 // Add services to the container.
 
 
 builder.Services.AddPersistenceServices(builder.Configuration);
 builder.Services.AddApplicationServices();
 
-//builder.Services.AddTransient<ProductDbContext>(provider => provider.GetService<ProductDbContext>());
-builder.Services.AddTransient(provider => provider.GetService<ProductDbContext>());
+//builder.Services.AddSingleton<IDocumentExecuter, SubscriptionDocumentExecuter>();
+//var connectionString = Configuration.GetConnectionString("ConferencePlannerDb");
+//services.AddDbContext<ApplicationDbContext>((serviceProvider, optionsBuilder) => {
+//    optionsBuilder.UseNpgsql(connectionString,
+//        b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName));
+//    optionsBuilder.UseApplicationServiceProvider(serviceProvider);
+
+//}, ServiceLifetime.Transient);
+
+
+
+
+
+builder.Services.AddTransient<ProductDbContext>(provider => provider.GetService<ProductDbContext>());
 
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 
+//builder.Services.AddSingleton<ISchema, AppSchema>();
+
 //GraphQL
 builder.Services.AddScoped<AppSchema>();
-
-builder.Services.AddGraphQL()
+// add notes schema
+//builder.Services.AddSingleton<ISchema, AppSchema>(services => new AppSchema(new SelfActivatingServiceProvider(services)));
+// register graphQL
+builder.Services.AddGraphQL(options =>
+{
+    options.EnableMetrics = true;
+})
     .AddSystemTextJson()
-  .AddGraphTypes(typeof(AppSchema), ServiceLifetime.Scoped);
+    .AddGraphTypes(typeof(AppSchema), ServiceLifetime.Scoped);
+
+//builder.Services.AddGraphQL(options =>
+//                    options.ConfigureExecution((opt, next) =>
+//                    {
+//                        opt.EnableMetrics = true;
+//                        return next(opt);
+//                    }).AddSystemTextJson()
+//                );
 
 
 
+//builder.Services
+//    .AddControllers(options => options.Filters.Add(typeof(ValidationFilter)))
+//    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateUserCommandValidator>());
 
-builder.Services
-    .AddControllers(options => options.Filters.Add(typeof(ValidationFilter)))
-    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateUserCommandValidator>());
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+        policyBuilder =>
+        {
+            policyBuilder.WithOrigins("*")
+                   .AllowAnyHeader();
+        });
+});
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -126,22 +170,27 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "GraphQLNetProject v1"));
+   // app.UseGraphQLAltair();
 }
 
 app.UseHttpsRedirection();
 
+app.UseCors();
 
 app.UseAuthentication();
-
 app.UseAuthorization();
 
 
-app.UseGraphQL<AppSchema>("/graphal");
-//app.UseGraphQLPlayground(options: new GraphQLPlaygroundOptions());
-app.UseGraphQLPlayground();
-
-
 app.MapControllers();
+
+app.UseGraphQL<AppSchema>("/ui/graphal");
+app.UseGraphQLPlayground(options: new GraphQLPlaygroundOptions());
+//app.UseGraphQL();
+//app.UseGraphQL<ISchema>("/ui/graphal");
+//app.UseGraphQL<AppSchema>("/ui/graphal");
+//app.UseGraphQLPlayground(options: new GraphQLPlaygroundOptions());
+//app.UseGraphQLPlayground("/ui/graphal");
+
 
 app.Run();

@@ -1,8 +1,10 @@
 ﻿using Products.Api.GraphQL.Queries;
 using GraphQL.Types;
-using GraphQL.Utilities;
-using System;
-using Schema = GraphQL.Types.Schema;
+//using GraphQL.Utilities;
+
+
+
+
 
 namespace Products.Api.GraphQL.Schemas {
     public class AppSchema : Schema {
@@ -10,5 +12,10 @@ namespace Products.Api.GraphQL.Schemas {
             Query = provider.GetRequiredService<AppQuery>();
             Mutation = provider.GetRequiredService<AppMutation>();
         }
+
+        //public NotesSchema(IServiceProvider serviceProvider) : base(serviceProvider)
+        //{
+        //    Query = serviceProvider.GetRequiredService<NotesQuery>();
+        //}
     }
 }

@@ -423,19 +423,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pc\\.nuget\\packages\\": {}
+    "C:\\Users\\pc\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Application\\Products.Application.csproj",
+      "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj",
       "projectName": "Products.Application",
-      "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Application\\Products.Application.csproj",
+      "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Application\\obj\\",
+      "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+      ],
       "configFilePaths": [
         "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -443,14 +448,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Domin\\Products.Domain.csproj": {
-              "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Domin\\Products.Domain.csproj"
+            "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Domin\\Products.Domain.csproj": {
+              "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Domin\\Products.Domain.csproj"
             }
           }
         }

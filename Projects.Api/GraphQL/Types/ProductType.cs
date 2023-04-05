@@ -9,7 +9,7 @@ namespace Products.Api.GraphQL.Types {
         public ProductType(ISender mediator) {
             Field(f => f.Id, type: typeof(IdGraphType)).Description("Id property from the Product object.");
             Field(f => f.Name, type: typeof(StringGraphType)).Description("Product name.");
-            Field(f => f.Sizes, type: typeof(ListGraphType<SizeType>)).Description("Product sizes.");
+            Field(f => f.Sizes, type: typeof(ListGraphType<SizeProductType>)).Description("Product sizes.");
         }
     }
 }

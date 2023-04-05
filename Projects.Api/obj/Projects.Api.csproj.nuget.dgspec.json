@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Projects.Api\\Projects.Api.csproj": {}
+    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Projects.Api\\Projects.Api.csproj": {}
   },
   "projects": {
-    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Application\\Products.Application.csproj": {
+    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Application\\Products.Application.csproj",
+        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj",
         "projectName": "Products.Application",
-        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Application\\Products.Application.csproj",
+        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Application\\obj\\",
+        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
           "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Domin\\Products.Domain.csproj": {
-                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Domin\\Products.Domain.csproj"
+              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Domin\\Products.Domain.csproj": {
+                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Domin\\Products.Domain.csproj"
               }
             }
           }
@@ -76,17 +81,21 @@
         }
       }
     },
-    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Domin\\Products.Domain.csproj": {
+    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Domin\\Products.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Domin\\Products.Domain.csproj",
+        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Domin\\Products.Domain.csproj",
         "projectName": "Products.Domain",
-        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Domin\\Products.Domain.csproj",
+        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Domin\\Products.Domain.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Domin\\obj\\",
+        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Domin\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
           "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,6 +103,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -130,17 +140,21 @@
         }
       }
     },
-    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Persistence\\Products.Persistence.csproj": {
+    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Persistence\\Products.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Persistence\\Products.Persistence.csproj",
+        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Persistence\\Products.Persistence.csproj",
         "projectName": "Products.Persistence",
-        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Persistence\\Products.Persistence.csproj",
+        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Persistence\\Products.Persistence.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Persistence\\obj\\",
+        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Persistence\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
           "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -148,14 +162,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Application\\Products.Application.csproj": {
-                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Application\\Products.Application.csproj"
+              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj": {
+                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj"
               }
             }
           }
@@ -200,17 +215,21 @@
         }
       }
     },
-    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Projects.Api\\Projects.Api.csproj": {
+    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Projects.Api\\Projects.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Projects.Api\\Projects.Api.csproj",
+        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Projects.Api\\Projects.Api.csproj",
         "projectName": "Projects.Api",
-        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Projects.Api\\Projects.Api.csproj",
+        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Projects.Api\\Projects.Api.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Projects.Api\\obj\\",
+        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Projects.Api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
           "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -218,17 +237,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Application\\Products.Application.csproj": {
-                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Application\\Products.Application.csproj"
+              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj": {
+                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj"
               },
-              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Persistence\\Products.Persistence.csproj": {
-                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Persistence\\Products.Persistence.csproj"
+              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Persistence\\Products.Persistence.csproj": {
+                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Persistence\\Products.Persistence.csproj"
               }
             }
           }
@@ -249,27 +269,31 @@
             },
             "GraphQL": {
               "target": "Package",
-              "version": "[5.4.0, )"
+              "version": "[3.1.5, )"
             },
             "GraphQL.Server.Transports.AspNetCore": {
               "target": "Package",
-              "version": "[5.2.2, )"
+              "version": "[4.3.1, )"
             },
             "GraphQL.Server.Transports.AspNetCore.SystemTextJson": {
               "target": "Package",
-              "version": "[5.2.2, )"
+              "version": "[4.3.1, )"
             },
             "GraphQL.Server.Ui.Playground": {
               "target": "Package",
-              "version": "[7.3.0, )"
+              "version": "[4.3.1, )"
             },
             "HotChocolate.AspNetCore": {
               "target": "Package",
-              "version": "[14.0.0-preview.10.2, )"
+              "version": "[12.0.1, )"
             },
             "HotChocolate.Data": {
               "target": "Package",
-              "version": "[14.0.0-preview.10.2, )"
+              "version": "[12.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
             },
             "Microsoft.AspNetCore.Authentication": {
               "target": "Package",
