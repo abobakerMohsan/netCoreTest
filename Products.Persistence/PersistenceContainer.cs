@@ -21,7 +21,7 @@ namespace Products.Persistence
             services.AddScoped(typeof(IEmployeRepository), typeof(EmployeRepository));
             services.AddScoped(typeof(ISizeRepository), typeof(SizeRepository));
 
-            services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
+           // services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
             services.AddScoped(typeof(IAuthService), typeof(AuthService));
           
                 return services;

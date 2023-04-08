@@ -13,7 +13,7 @@ namespace Products.Domain.Entites
         public Guid SizeId { get; set; }
 
         public Product Product { get; set; }
-        public Size Size { get; set; }
+        public MainSize Size { get; set; }
   
 
     }

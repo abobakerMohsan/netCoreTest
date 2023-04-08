@@ -6,23 +6,23 @@ using Products.Domain.Entities;
 namespace Products.Persistence.Repositories
 {
 
-    public class SizeRepository : BaseRepository<Size>, ISizeRepository
+    public class SizeRepository : BaseRepository<MainSize>, ISizeRepository
     {
         public SizeRepository(ProductDbContext productDbContext) : base(productDbContext)
         {
 
         }
-        public async Task<IReadOnlyList<Size>> GetAllSizeAsync()
+        public async Task<IReadOnlyList<MainSize>> GetAllSizeAsync()
         {
-            List<Size> allPosts = new List<Size>();
+            List<MainSize> allPosts = new List<MainSize>();
             //  allPosts = includeCategory ? await _dbContext.Products.Include(x => x.Category).ToListAsync() : await _dbContext.Posts.ToListAsync();
-            allPosts = await _dbContext.Sizes.ToListAsync();
+            allPosts = await _dbContext.MainSizes.ToListAsync();
             return allPosts;
         }
 
-        public async Task<Size> GetSizeByIdAsync(Guid id)
+        public async Task<MainSize> GetSizeByIdAsync(Guid id)
         {
-            Size Post = new Size();
+            MainSize Post = new MainSize();
             Post = await GetByIdAsync(id);
             return Post;
         }

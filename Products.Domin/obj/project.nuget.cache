@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jOVTEoxKXgJ/oqu0RBIlL8Q+bfzYpmdLKPQgPCMLOxuvpT8ZsJ+qysFtFPJ5Au6Mg+Ut0cjnWw6NaD5Gm1TzMw==",
+  "dgSpecHash": "aYt5g5QehpUBpTdEbT8lzQRrCuilgykrTmwb4GO1SBziG8sVasAJuEFLiFQFFXBrYJDJb/knc+CFgQPaCULdlA==",
   "success": true,
-  "projectFilePath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Domin\\Products.Domain.csproj",
+  "projectFilePath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Domin\\Products.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

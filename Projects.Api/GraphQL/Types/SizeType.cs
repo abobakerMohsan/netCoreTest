@@ -7,7 +7,7 @@ using Products.Domain.Entities;
 
 namespace Products.Api.GraphQL.Types
 {
-    public class SizeType : ObjectGraphType<Size>
+    public class SizeType : ObjectGraphType<MainSize>
     {
         public SizeType(ISender mediator)
         {

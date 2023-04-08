@@ -22,7 +22,7 @@ namespace Products.Application.Features.Sizes.Commands.CreateSize
         }
         public async Task<Guid> Handle(CreateSizeCommand request, CancellationToken cancellationToken)
         {
-            Size post = _mapper.Map<Size>(request);
+            MainSize post = _mapper.Map<MainSize>(request);
 
             CreateSizeCommandValidator validator = new CreateSizeCommandValidator();
             var result = await validator.ValidateAsync(request);
