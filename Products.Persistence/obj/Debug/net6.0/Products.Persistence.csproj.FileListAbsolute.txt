@@ -76,3 +76,5 @@ E:\Desktop\notcore\test_soft\Products.Domin\netCoreAuth\Products.Persistence\bin
 E:\Desktop\notcore\test_soft\Products.Domin\netCoreAuth\Products.Persistence\bin\Debug\net6.0\Products.Domain.pdb
 E:\Desktop\notcore\test_soft\Products.Domin\netCoreAuth\Products.Persistence\obj\Debug\net6.0\Products.Persistence.csproj.CopyComplete
 E:\Desktop\notcore\test_soft\Products.Domin\netCoreAuth\Products.Persistence\obj\Debug\net6.0\Products.Persistence.genruntimeconfig.cache
+E:\Desktop\notcore\test_soft\Products.Domin\netCoreTest\Products.Persistence\bin\Debug\net6.0\Products.Common.dll
+E:\Desktop\notcore\test_soft\Products.Domin\netCoreTest\Products.Persistence\bin\Debug\net6.0\Products.Common.pdb

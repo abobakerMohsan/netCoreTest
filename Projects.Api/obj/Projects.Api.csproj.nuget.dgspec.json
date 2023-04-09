@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Projects.Api\\Projects.Api.csproj": {}
+    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Projects.Api\\Projects.Api.csproj": {}
   },
   "projects": {
-    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Common\\Products.Common.csproj": {
+    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Common\\Products.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Common\\Products.Common.csproj",
+        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Common\\Products.Common.csproj",
         "projectName": "Products.Common",
-        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Common\\Products.Common.csproj",
+        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Common\\Products.Common.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Common\\obj\\",
+        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Application\\Products.Application.csproj": {
+    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Application\\Products.Application.csproj",
+        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj",
         "projectName": "Products.Application",
-        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Application\\Products.Application.csproj",
+        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Application\\obj\\",
+        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
@@ -92,8 +92,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Domin\\Products.Domain.csproj": {
-                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Domin\\Products.Domain.csproj"
+              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Domin\\Products.Domain.csproj": {
+                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Domin\\Products.Domain.csproj"
               }
             }
           }
@@ -156,14 +156,14 @@
         }
       }
     },
-    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Domin\\Products.Domain.csproj": {
+    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Domin\\Products.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Domin\\Products.Domain.csproj",
+        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Domin\\Products.Domain.csproj",
         "projectName": "Products.Domain",
-        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Domin\\Products.Domain.csproj",
+        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Domin\\Products.Domain.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Domin\\obj\\",
+        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Domin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
@@ -215,14 +215,14 @@
         }
       }
     },
-    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Infrastructure\\Products.Infrastructure.csproj": {
+    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Infrastructure\\Products.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Infrastructure\\Products.Infrastructure.csproj",
+        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Infrastructure\\Products.Infrastructure.csproj",
         "projectName": "Products.Infrastructure",
-        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Infrastructure\\Products.Infrastructure.csproj",
+        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Infrastructure\\Products.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Infrastructure\\obj\\",
+        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
@@ -244,11 +244,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Common\\Products.Common.csproj": {
-                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Common\\Products.Common.csproj"
+              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Common\\Products.Common.csproj": {
+                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Common\\Products.Common.csproj"
               },
-              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Application\\Products.Application.csproj": {
-                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Application\\Products.Application.csproj"
+              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj": {
+                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj"
               }
             }
           }
@@ -295,14 +295,14 @@
         }
       }
     },
-    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Persistence\\Products.Persistence.csproj": {
+    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Persistence\\Products.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Persistence\\Products.Persistence.csproj",
+        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Persistence\\Products.Persistence.csproj",
         "projectName": "Products.Persistence",
-        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Persistence\\Products.Persistence.csproj",
+        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Persistence\\Products.Persistence.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Persistence\\obj\\",
+        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
@@ -324,11 +324,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Common\\Products.Common.csproj": {
-                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Common\\Products.Common.csproj"
+              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Common\\Products.Common.csproj": {
+                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Common\\Products.Common.csproj"
               },
-              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Application\\Products.Application.csproj": {
-                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Application\\Products.Application.csproj"
+              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj": {
+                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj"
               }
             }
           }
@@ -395,14 +395,14 @@
         }
       }
     },
-    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Projects.Api\\Projects.Api.csproj": {
+    "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Projects.Api\\Projects.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Projects.Api\\Projects.Api.csproj",
+        "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Projects.Api\\Projects.Api.csproj",
         "projectName": "Projects.Api",
-        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Projects.Api\\Projects.Api.csproj",
+        "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Projects.Api\\Projects.Api.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Projects.Api\\obj\\",
+        "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Projects.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
@@ -424,14 +424,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Application\\Products.Application.csproj": {
-                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Application\\Products.Application.csproj"
+              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj": {
+                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Application\\Products.Application.csproj"
               },
-              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Infrastructure\\Products.Infrastructure.csproj": {
-                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Infrastructure\\Products.Infrastructure.csproj"
+              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Infrastructure\\Products.Infrastructure.csproj": {
+                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Infrastructure\\Products.Infrastructure.csproj"
               },
-              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Persistence\\Products.Persistence.csproj": {
-                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Persistence\\Products.Persistence.csproj"
+              "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Persistence\\Products.Persistence.csproj": {
+                "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Persistence\\Products.Persistence.csproj"
               }
             }
           }

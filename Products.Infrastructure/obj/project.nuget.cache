@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i4YSV49nB/ps6cRED5/vgAs2QPvIRlXU5R3TDip09yAcwSQV2M/PJZJSna0ihadApNpQ/0ICegEgb5YWguGo1Q==",
+  "dgSpecHash": "fEj92syWv5SriWD4fhZDJrm/FiJ1QgtWTV4/kBZwzvSntvEJDDIWMRs0vrrY6+rbdeUoYKOoT81b97LKn0zZ3g==",
   "success": true,
-  "projectFilePath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreAuth\\Products.Infrastructure\\Products.Infrastructure.csproj",
+  "projectFilePath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\netCoreTest\\Products.Infrastructure\\Products.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

@@ -14,7 +14,7 @@ using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using Products.Application.Features.Users.Commands.CreateUser;
+//using Products.Application.Features.Users.Commands.CreateUser;
 
 using Products.Api.GraphQL.Schemas;
 using MediatR;
@@ -99,6 +99,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddIdentityServer().AddDeveloperSigningCredential();
 
 
 
@@ -190,6 +191,7 @@ app.UseOpenApi();
 
 app.UseAuthentication();
 app.UseIdentityServer();
+
 app.UseAuthorization();
 
 
