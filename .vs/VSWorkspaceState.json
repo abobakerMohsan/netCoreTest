@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Projects.Api"
   ],
-  "SelectedNode": "\\Products.Domin.sln",
+  "SelectedNode": "\\Projects.Api\\Projects.Api.csproj",
   "PreviewInSolutionExplorer": false
 }

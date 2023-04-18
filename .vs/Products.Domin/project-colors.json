@@ -25,7 +25,12 @@
       "ProjectGuid": "691b7ce3-d17c-4171-a331-8b73ed757edc",
       "DisplayName": "Products.Persistence",
       "ColorIndex": 3
+    },
+    "4b34e593-86d0-44c0-bd5d-3a62f2ef55fa": {
+      "ProjectGuid": "4b34e593-86d0-44c0-bd5d-3a62f2ef55fa",
+      "DisplayName": "Products.Infrastructure",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }

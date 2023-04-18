@@ -39,21 +39,21 @@ namespace Products.Infrastructure
                     {
                         options.Clients.Add(new Client
                         {
-                            ClientId = "Northwind.IntegrationTests",
+                            ClientId = "Products.IntegrationTests",
                             AllowedGrantTypes = { GrantType.ResourceOwnerPassword },
                             ClientSecrets = { new Secret("secret".Sha256()) },
-                            AllowedScopes = { "Northwind.WebUIAPI", "openid", "profile" }
+                            AllowedScopes = { "Products.API", "openid", "profile" }
                         });
                     }).AddTestUsers(new List<TestUser>
                     {
                         new TestUser
                         {
                             SubjectId = "f26da293-02fb-4c90-be75-e4aa51e0bb17",
-                            Username = "jason@northwind",
-                            Password = "Northwind1!",
+                            Username = "bakr@products",
+                            Password = "Prpducts!",
                             Claims = new List<Claim>
                             {
-                                new Claim(JwtClaimTypes.Email, "jason@northwind")
+                                new Claim(JwtClaimTypes.Email, "bakr@products")
                             }
                         }
                     });

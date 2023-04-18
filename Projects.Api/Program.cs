@@ -1,6 +1,11 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-//using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using Serilog;
+using System;
+
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Products.Persistence;
@@ -36,32 +41,15 @@ builder.Services.AddInfrastructure(configuration, builder.Environment);
 builder.Services.AddPersistence(configuration);
 builder.Services.AddApplication();
 
-//builder.Services.AddPersistenceServices(builder.Configuration);
-//builder.Services.AddApplicationServices();
 
 builder.Services.AddHealthChecks()
               .AddDbContextCheck<ProductDbContext>();
-
-//services.AddScoped<ICurrentUserService, CurrentUserService>();
-
-//builder.Services.AddSingleton<IDocumentExecuter, SubscriptionDocumentExecuter>();
-//var connectionString = Configuration.GetConnectionString("ConferencePlannerDb");
-//services.AddDbContext<ApplicationDbContext>((serviceProvider, optionsBuilder) => {
-//    optionsBuilder.UseNpgsql(connectionString,
-//        b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName));
-//    optionsBuilder.UseApplicationServiceProvider(serviceProvider);
-
-//}, ServiceLifetime.Transient);
-
-
 
 
 
 builder.Services.AddTransient<ProductDbContext>(provider => provider.GetService<ProductDbContext>());
 
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
-
-//builder.Services.AddSingleton<ISchema, AppSchema>();
 
 //GraphQL
 builder.Services.AddScoped<AppSchema>();
@@ -75,31 +63,18 @@ builder.Services.AddGraphQL(options =>
     .AddSystemTextJson()
     .AddGraphTypes(typeof(AppSchema), ServiceLifetime.Scoped);
 
-//builder.Services.AddGraphQL(options =>
-//                    options.ConfigureExecution((opt, next) =>
-//                    {
-//                        opt.EnableMetrics = true;
-//                        return next(opt);
-//                    }).AddSystemTextJson()
-//                );
-
-
-
-//builder.Services
-//    .AddControllers(options => options.Filters.Add(typeof(ValidationFilter)))
-//    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateUserCommandValidator>());
 
 builder.Services.AddControllers()
-         // .AddNewtonsoftJson()
+          // .AddNewtonsoftJson()
           .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<IProductDbContext>());
 
 
 
-builder.Services.AddControllers();
+//builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddIdentityServer().AddDeveloperSigningCredential();
+//builder.Services.AddIdentityServer().AddDeveloperSigningCredential();
 
 
 
@@ -176,27 +151,25 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-   // app.UseSwagger();
+    app.UseSwagger();
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "GraphQLNetProject v1"));
-   // app.UseGraphQLAltair();
+    // app.UseGraphQLAltair();
 }
 
 //app.UseCustomExceptionHandler();
 //app.UseHealthChecks("/health");
-
 app.UseHttpsRedirection();
+app.UseRouting();
+//Enable CORS
+app.UseCors("AllowAll");
+app.UseHealthChecks("/health");
 
-app.UseOpenApi();
-
-
-app.UseAuthentication();
-app.UseIdentityServer();
-
+//app.UseAuthentication();
+//app.UseIdentityServer();
 app.UseAuthorization();
 
 
 app.MapControllers();
-
 app.UseGraphQL<AppSchema>("/ui/graphal");
 app.UseGraphQLPlayground(options: new GraphQLPlaygroundOptions());
 //app.UseGraphQL();
@@ -207,3 +180,53 @@ app.UseGraphQLPlayground(options: new GraphQLPlaygroundOptions());
 
 
 app.Run();
+
+
+
+//namespace Products.Api
+//{
+//    public static class Program
+//    {
+//        public static void Main(string[] args)
+//        {
+//            //Read Configuration from appSettings
+//            var config = new ConfigurationBuilder()
+//                .AddJsonFile("appsettings.json")
+//                .Build();
+
+//            //Initialize Logger
+//            Log.Logger = new LoggerConfiguration()
+//                .ReadFrom.Configuration(config)
+//                .WriteTo.Console()
+//                .CreateLogger();
+
+//            var host = CreateHostBuilder(args).Build();
+//            using (var scope = host.Services.CreateScope())
+//            {
+//                var services = scope.ServiceProvider;
+//                var loggerFactory = services.GetRequiredService<ILoggerFactory>();
+//                try
+//                {
+//                    Log.Information("Application Starting");
+//                }
+//                catch (Exception ex)
+//                {
+//                    Log.Warning(ex, "An error occurred starting the application");
+//                }
+//                finally
+//                {
+//                    Log.CloseAndFlush();
+//                }
+//            }
+//            host.Run();
+//        }
+
+//        public static IHostBuilder CreateHostBuilder(string[] args) =>
+//            Host.CreateDefaultBuilder(args)
+//            .UseSerilog() //Uses Serilog instead of default .NET Logger
+//            .ConfigureWebHostDefaults(webBuilder =>
+//            {
+//                webBuilder.UseStartup<Startup>();
+//            });
+//    }
+//}

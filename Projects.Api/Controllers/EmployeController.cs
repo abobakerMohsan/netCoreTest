@@ -6,12 +6,14 @@ using Products.Application.Features.Employes.Queries.GetEmployesList;
 using MediatR;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Projects.Api.Controllers
 {
 
     [Route("api/employes/[controller]")]
     [ApiController]
+    [Authorize]
     public class EmployeController : ControllerBase
     {
 

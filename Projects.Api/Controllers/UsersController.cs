@@ -9,7 +9,7 @@
 //namespace Projects.Api.Controllers
 //{
 //    [Route("api/users")]
-//   // [Authorize]
+//    // [Authorize]
 //    public class UsersController : ControllerBase
 //    {
 //        private readonly IMediator _mediator;
